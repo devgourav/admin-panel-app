@@ -1,0 +1,15 @@
+li {
+  @apply border-gray-50 p-4 m-2 rounded-xl w-full flex items-center hover:bg-white hover:shadow;
+
+  a {
+    @apply ml-4 text-lg;
+  }
+
+  ion-icon {
+    @apply text-lg;
+  }
+
+  .router-link-active {
+    @apply hover:bg-white hover:shadow;
+  }
+}

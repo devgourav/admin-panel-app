@@ -1,0 +1,24 @@
+<div class="flex bg-gray-100 page-wrapper">
+  <app-sidebar></app-sidebar>
+
+  <div class="w-full ml-4 product-wrapper">
+    <div class="m-10 text-3xl page-header">Product Inventory</div>
+
+    <div class="flex">
+      <app-data-card [data]="totalProductData"></app-data-card>
+      <app-data-card [data]="outOfStockData"></app-data-card>
+      <app-data-card [data]="expiredData"></app-data-card>
+    </div>
+
+    <div class="px-2 mt-4 mr-2 rounded-md product-table">
+      <ag-grid-angular
+        style="width: 100%; height: 40vh"
+        class="ag-theme-material"
+        [rowData]="rowData | async"
+        [columnDefs]="columnDefs"
+        (gridReady)="onGridReady($event)"
+      >
+      </ag-grid-angular>
+    </div>
+  </div>
+</div>

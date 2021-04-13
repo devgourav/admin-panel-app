@@ -1,4 +1,27 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import '../node_modules/ag-grid-community/dist/styles/ag-grid.css';
+@import '../node_modules/ag-grid-community/dist/styles/ag-theme-material.css';
+
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ag-theme-material {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ag-theme-material .ag-header {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.ag-theme-material .ag-row {
+  font-size: 1.1em;
+  border-width: 0px;
+  color: black;
+}
